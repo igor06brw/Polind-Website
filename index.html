@@ -4,10 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Polind Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./dest/css/main.min.css">
 </head>
-<body>
-    <h1>xD</h1>
+<body class="page">
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__element">Guide</li>
+                <li class="nav__element">Journey</li>
+                <li class="nav__element">Hotels</li>
+                <li class="nav__element">Travelers</li>
+                <li class="nav__element"></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="./dest/assets/img/logo.png" alt="Logo" class="logo--image">
+            <h4 class="logo--text">Polind</h4>
+        </div>
+        <div class="heading-box">
+            <div class="heading-box__content">
+                <h1 class="heading-box__heading">Fall in love with Poland</h1>
+                <p class="heading-box__paragraph">Best way to find your perfect place in Poland</p>
+                <button class="heading-box__button button--yellow">Search your place</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <article class="article discover__article">
+            <section class="section discover__section">
+                <p>Popular places to discover</p>
+                <div class="gallery discover-gallery--content">
+                    <div class="discover-gallery--element">
+                        <img src="./dest/assets/img/left_dark.png" alt="">
+                    </div>
+                    <div class="discover-gallery--element">
+                        <h3 class="discover-gallery--heading">Zakopane</h3>
+                        <p class="discover-gallery--paragraph">Małopolskie</p>
+                        <img src="./dest/assets/img/zakopane.png" alt="Zakopane">
+                    </div>
+                    <div class="discover-gallery--element">
+                        <h2 class="discover-gallery--heading">Sandomierz</h2>
+                        <p class="discover-gallery--paragraph">Świętokrzyskie</p>
+                        <img src="./dest/assets/img/sandomierz.png" alt="Sandomierz">
+                    </div>
+                    <div class="discover-gallery--element">
+                        <h3 class="discover-gallery--heading">Sopot</h3>
+                        <p class="discover-gallery--paragraph">Pomorskie</p>
+                        <img src="./dest/assets/img/sopot.png" alt="Sopot">
+                    </div>
+                    <div class="discover-gallery--element">
+                        <img src="./dest/assets/img/rightz_dark.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
