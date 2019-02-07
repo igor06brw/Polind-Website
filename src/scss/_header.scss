@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url(../../dest/assets/img/bg_header.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 400px;
+    position:relative;
+
+    .heading-box {
+        z-index: 2;
+        order: 3;
+        margin: 200px auto 0 auto;
+        text-align: center;
+        
+        .heading-box__heading {
+            color: #fff;
+            font-size: 5em;
+            font-weight: bolder;
+            
+            .red-text {
+                color: #F66;
+            }
+        }
+        .heading-box__paragraph {
+            color: rgba(255,255,255,0.4);
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .heading-box__button {
+            
+        }
+    }
+
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+}

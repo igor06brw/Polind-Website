@@ -1,0 +1,15 @@
+.button {
+    margin-top: 50px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    width: 250px;
+    height: 50px;
+    text-transform: uppercase;
+
+}
+.button--yellow {
+    color: rgba(0,0,0,0.6);
+    background-color: hsl(46, 86%, 67%);
+    font-weight: 700;
+    font-size: 14px;
+}
