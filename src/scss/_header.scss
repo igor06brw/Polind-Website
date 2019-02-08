@@ -7,8 +7,8 @@
     z-index: 1;
     height: 100%;
     width: 100%;
-    padding-bottom: 400px;
-    position:relative;
+    padding-bottom: 500px;
+    position: relative;
 
     .heading-box {
         z-index: 2;
@@ -34,7 +34,6 @@
             
         }
     }
-
 }
 .header::before {
     content: '';

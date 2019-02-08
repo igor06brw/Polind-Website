@@ -1,0 +1,37 @@
+.discover__article {
+    display:flex;
+    position: absolute; 
+    z-index: 3;
+    top: 55em;
+
+    .discover__section {  
+         p {
+             text-align: center;
+             color: $white;
+             font-weight: 700;
+             padding: 40px;
+         }
+
+        .discover-gallery--content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .discover-gallery--element {
+                position: relative;
+                padding: 10px;
+
+                .discover-gallery--heading {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%); 
+                }
+                .discover-gallery--paragraph {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%); 
+                }
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@ body {
   z-index: 1;
   height: 100%;
   width: 100%;
-  padding-bottom: 400px;
+  padding-bottom: 500px;
   position: relative;
 }
 
@@ -110,6 +110,43 @@ body {
   background-color: #f3d162;
   font-weight: 700;
   font-size: 14px;
+}
+
+.discover__article {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  top: 55em;
+}
+
+.discover__article .discover__section p {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  padding: 40px;
+}
+
+.discover__article .discover__section .discover-gallery--content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.discover__article .discover__section .discover-gallery--content .discover-gallery--element {
+  position: relative;
+  padding: 10px;
+}
+
+.discover__article .discover__section .discover-gallery--content .discover-gallery--element .discover-gallery--heading {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.discover__article .discover__section .discover-gallery--content .discover-gallery--element .discover-gallery--paragraph {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 h1 {
