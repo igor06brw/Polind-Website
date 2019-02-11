@@ -24,12 +24,44 @@
                 .discover-gallery--heading {
                     position: absolute;
                     left: 50%;
+                    margin: 180px 0;
                     transform: translate(-50%); 
+                    color: $white;
+                    font-size: 40px;
                 }
                 .discover-gallery--paragraph {
                     position: absolute;
+                    left: 50%;  
+                    margin: 200px 0;
+                    transform: translate(-50%); 
+                    color: $white;
+                    font-weight: 500;
+                }
+                .discover-gallery--button {
+                    position: absolute;
                     left: 50%;
                     transform: translate(-50%); 
+                    margin: 310px 0;
+                }
+            }
+            .discover-gallery--element:nth-of-type(4n+1) {
+                .discover-gallery--heading {
+                    display: none;
+                }
+                .discover-gallery--paragraph {
+                    display: none;
+                }
+            }
+            .discover-gallery--element:nth-of-type(2n+0) {
+                .discover-gallery--heading {
+                    font-size: 30px;
+                    margin: 300px 0;
+                }
+                .discover-gallery--paragraph {
+                    font-weight: 500;
+                    margin: 300px 0;
+                    color:hsl(46, 86%, 67%);
+
                 }
             }
         }

@@ -140,13 +140,45 @@ body {
 .discover__article .discover__section .discover-gallery--content .discover-gallery--element .discover-gallery--heading {
   position: absolute;
   left: 50%;
+  margin: 180px 0;
   transform: translate(-50%);
+  color: #fff;
+  font-size: 40px;
 }
 
 .discover__article .discover__section .discover-gallery--content .discover-gallery--element .discover-gallery--paragraph {
   position: absolute;
   left: 50%;
+  margin: 200px 0;
   transform: translate(-50%);
+  color: #fff;
+  font-weight: 500;
+}
+
+.discover__article .discover__section .discover-gallery--content .discover-gallery--element .discover-gallery--button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 310px 0;
+}
+
+.discover__article .discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(4n+1) .discover-gallery--heading {
+  display: none;
+}
+
+.discover__article .discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(4n+1) .discover-gallery--paragraph {
+  display: none;
+}
+
+.discover__article .discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(2n+0) .discover-gallery--heading {
+  font-size: 30px;
+  margin: 300px 0;
+}
+
+.discover__article .discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(2n+0) .discover-gallery--paragraph {
+  font-weight: 500;
+  margin: 300px 0;
+  color: #f3d162;
 }
 
 h1 {
