@@ -1,10 +1,8 @@
+@import "./reset";
 @import "./fonts.scss";
 @import "./header";
 @import "./nav";
 @import "./logo";
 @import "./buttons";
 @import "./discover";
-
-h1 {
-    margin: 0;
-}
+@import "./search-place";

@@ -1,0 +1,79 @@
+    .search-place__section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 15% auto 0 auto;
+        width: 80%;
+        position: relative;
+        .search-place__heading {
+            text-align: center;
+            margin-bottom: 100px;
+            font-size: 42px;
+            color: grey;
+        }
+        .search-place__input {
+            display: flex;
+            flex-direction: row;
+            margin-bottom:15px;
+            input {
+                border: none; /* <-- This thing here */
+                border-radius: 25px;
+                box-shadow: 0px 0px 100px 00px rgba(0,0,0,0.2);
+                width: 100%;
+                min-height: 50px;
+
+                &::placeholder {
+                    padding: 30px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .search-place__filter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            .search-place__list {
+                display: flex;
+                flex-direction: row;
+                .search-place__filter-element {
+                    margin: 20px 10px;
+                    list-style: none;
+                    .search-place__filter-link {
+                        text-decoration: none;
+                        background-color: white;
+                        color: grey;
+                        font-weight: 600;
+                        padding: 5px 15px;
+                        border-radius: 50px;
+                        border: 1px solid grey;
+                    }
+                    .filter-link--grey {
+                        background-color: grey;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .find-box__finded-item-box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            align-items: center;
+            box-shadow: 0px 0px 100px -40px rgba(0,0,0,1);
+            min-width: 20%;
+            .find-box__finded-item-image {
+                width: 400px;
+            }
+            .find-box__finded-item-heading {
+
+            }
+            .find-box__finded-item-paragrap {
+
+            }
+            .button {
+                margin-bottom: 50px;
+            }
+        }
+    }

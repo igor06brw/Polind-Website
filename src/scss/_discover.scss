@@ -1,11 +1,11 @@
-.discover__article {
-    display:flex;
-    position: absolute; 
-    z-index: 3;
-    top: 55em;
-
-    .discover__section {  
-         p {
+    .discover__section { 
+        display:flex;
+        justify-content: flex-start;
+        position: absolute; 
+        z-index: 3;
+        top: 55em; 
+        flex-direction: column;
+         h5 {
              text-align: center;
              color: $white;
              font-weight: 700;
@@ -32,7 +32,7 @@
                 .discover-gallery--paragraph {
                     position: absolute;
                     left: 50%;  
-                    margin: 200px 0;
+                    margin: 250px 0;
                     transform: translate(-50%); 
                     color: $white;
                     font-weight: 500;
@@ -41,7 +41,7 @@
                     position: absolute;
                     left: 50%;
                     transform: translate(-50%); 
-                    margin: 310px 0;
+                    margin: 340px 0;
                 }
             }
             .discover-gallery--element:nth-of-type(4n+1) {
@@ -59,11 +59,14 @@
                 }
                 .discover-gallery--paragraph {
                     font-weight: 500;
-                    margin: 300px 0;
+                    margin: 350px 0;
                     color:hsl(46, 86%, 67%);
 
                 }
             }
         }
     }
+.discover__section::after {
+    content: " ";
+    position: relative;
 }
