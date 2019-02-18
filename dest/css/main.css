@@ -215,13 +215,18 @@ body {
   color: grey;
 }
 
-.search-place__section .search-place__input {
+.search-place__section .search-place__wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.search-place__section .search-place__wrapper .search-place__input {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
 }
 
-.search-place__section .search-place__input input {
+.search-place__section .search-place__wrapper .search-place__input input {
   border: none;
   /* <-- This thing here */
   border-radius: 25px;
@@ -230,29 +235,29 @@ body {
   min-height: 50px;
 }
 
-.search-place__section .search-place__input input::placeholder {
+.search-place__section .search-place__wrapper .search-place__input input::placeholder {
   padding: 30px;
   font-weight: 500;
 }
 
-.search-place__section .search-place__filter {
+.search-place__section .search-place__wrapper .search-place__filter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 
-.search-place__section .search-place__filter .search-place__list {
+.search-place__section .search-place__wrapper .search-place__filter .search-place__list {
   display: flex;
   flex-direction: row;
 }
 
-.search-place__section .search-place__filter .search-place__list .search-place__filter-element {
+.search-place__section .search-place__wrapper .search-place__filter .search-place__list .search-place__filter-element {
   margin: 20px 10px;
   list-style: none;
 }
 
-.search-place__section .search-place__filter .search-place__list .search-place__filter-element .search-place__filter-link {
+.search-place__section .search-place__wrapper .search-place__filter .search-place__list .search-place__filter-element .search-place__filter-link {
   text-decoration: none;
   background-color: white;
   color: grey;
@@ -262,25 +267,45 @@ body {
   border: 1px solid grey;
 }
 
-.search-place__section .search-place__filter .search-place__list .search-place__filter-element .filter-link--grey {
+.search-place__section .search-place__wrapper .search-place__filter .search-place__list .search-place__filter-element .filter-link--grey {
   background-color: grey;
   color: white;
 }
 
-.search-place__section .find-box__finded-item-box {
+.search-place__section .find-box__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-place__section .find-box__wrapper .find-box__finded-item-box {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 0px 100px -40px black;
-  min-width: 20%;
+  min-width: 400px;
+  margin: 30px 10px;
+  border: 10px solid white;
 }
 
-.search-place__section .find-box__finded-item-box .find-box__finded-item-image {
-  width: 400px;
+.search-place__section .find-box__wrapper .find-box__finded-item-box .find-box__finded-item-image {
+  min-width: 400px;
 }
 
-.search-place__section .find-box__finded-item-box .button {
+.search-place__section .find-box__wrapper .find-box__finded-item-box .find-box__finded-item-heading {
+  margin: 30px 0 0 0;
+  font-size: 32px;
+  color: grey;
+}
+
+.search-place__section .find-box__wrapper .find-box__finded-item-box .find-box__finded-item-paragrap {
+  font-size: 20px;
+  color: grey;
+}
+
+.search-place__section .find-box__wrapper .find-box__finded-item-box .button {
   margin-bottom: 50px;
 }
