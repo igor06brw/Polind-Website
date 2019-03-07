@@ -22,6 +22,16 @@ body {
   position: relative;
 }
 
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
 .header .heading-box {
   z-index: 2;
   order: 3;
@@ -43,16 +53,6 @@ body {
   color: rgba(255, 255, 255, 0.4);
   font-size: 16px;
   font-weight: 600;
-}
-
-.header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
 }
 
 .nav {
@@ -308,4 +308,50 @@ body {
 
 .search-place__section .find-box__wrapper .find-box__finded-item-box .button {
   margin-bottom: 50px;
+}
+
+.explore {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 5% auto;
+  width: 80%;
+}
+
+.explore::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  background-color: #010101;
+}
+
+.explore .section__heading {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 42px;
+  color: grey;
+}
+
+.explore .explore__box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.explore .explore__box .explore__wrapper {
+  display: flex;
+  width: 45%;
+  padding: 20px;
+}
+
+.explore .explore__box .explore__wrapper .explore__content .explore__heading {
+  margin: 40px 0 60px 0;
+  font-size: 42px;
+  color: #f3d162;
+}
+
+.explore .explore__box .explore__wrapper .explore__content .explore__paragraph {
+  line-height: 30px;
+  color: grey;
 }
