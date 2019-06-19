@@ -1,0 +1,117 @@
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .header {
+        justify-content: flex-start;
+        align-content: center;
+        .heading-box {
+            width:80%;
+            margin: 0;
+
+            &:last-of-type {
+                margin: auto;
+            }
+            .nav {
+                .nav__list {
+                    display: none;
+                }
+                .nav__mobile-hamburger {
+                    margin: 20px;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .logo {
+                .logo__image {
+                    padding: 0 10px 0 0;
+                }
+                // .logo__text {
+
+                // }
+            }
+            .heading-box__content {
+                align-items: center;
+                .heading-box__heading {
+                    font-size: 5em;
+                }
+                .heading-box__paragraph {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .main {
+
+        .section {
+            margin: 0;
+        }
+
+
+
+
+        .discover__section {
+            display: none;
+        }
+
+        .search-place__section {
+            width:100%;
+            margin: 0;
+            .find-box__wrapper  {
+                min-width: 0;
+                display: flex;
+                justify-content: center;
+
+                .find-box__finded-item-box {
+                    min-width: 60%;
+                    
+                    &:nth-child(n+4) {
+                        display: none; 
+                     }
+
+                    .find-box__finded-item-image {
+                        min-width: initial;
+                        width: 100%;
+                    }
+                } 
+            }
+            .search-place__wrapper {
+                // .search-place__input {
+                // }
+                .search-place__filter {
+                    justify-content: center;
+                }
+            }
+            .search-place__heading {
+                margin: 100px 0 100px 0;
+            }
+        }
+        .explore {
+            margin: 30px auto 0 auto;
+            width:85%;
+            
+            &:before {
+                top: 58%;
+            }
+            .section__heading {
+                margin-bottom: 0;
+            }
+            .explore__box {
+                width: 100%;
+                .explore__wrapper {
+                    width: 80%;
+                    padding: 0 0 40px 0;
+                    .explore__content {
+                      .explore__heading {
+                          font-size: 1.8em;
+                          margin: 40px 0 20px 0;
+                      } 
+                    }
+                }
+            }
+        }
+        .sign-up__section {
+            background-size: 100% 100%;
+            .sign-up__heading {
+                font-size:4em;
+            }
+        }
+    }
+}

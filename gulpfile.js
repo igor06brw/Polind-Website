@@ -25,7 +25,11 @@ function browserSync(done) {
     server: {
       baseDir: "./"
     },
-    port: 3000
+    tunnel: "polind-website",
+    open: "external",
+    online: true,
+    logLevel: "debug",
+    port: 3000,
   });
   done();
 }

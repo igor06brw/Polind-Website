@@ -27,13 +27,15 @@
 
                     &::placeholder {
                         padding: 30px;
-                        font-weight: 500;
+                        font-weight: 600;
+                        
                     }
                 }
             }
             .search-place__filter {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 margin-bottom: 15px;
                 .search-place__list {

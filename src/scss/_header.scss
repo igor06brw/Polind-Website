@@ -4,12 +4,14 @@
     justify-content: space-between;
     background-image: url(../../dest/assets/img/bg_header.png);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 300% 100%;
     z-index: 1;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 500px;
+    height: 100vh;
+    width: 100vw;
     position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+
 
     &::before {
         content: '';
@@ -24,8 +26,16 @@
     .heading-box {
         z-index: 2;
         order: 3;
-        margin: 200px auto 0 auto;
+        margin: 30px auto 50px auto;
         text-align: center;
+        width: 100%;
+
+        &:first-of-type {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+        }
         
         .heading-box__heading {
             color: #fff;
