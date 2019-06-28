@@ -25,8 +25,9 @@ function browserSync(done) {
     server: {
       baseDir: "./"
     },
-    tunnel: "polind-website",
-    open: "external",
+    open: true,
+    https: true,
+    watch: true,
     online: true,
     logLevel: "debug",
     port: 3000,

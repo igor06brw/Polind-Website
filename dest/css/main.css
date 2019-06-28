@@ -508,7 +508,7 @@ body {
     align-content: center;
   }
   .header .heading-box {
-    width: 80%;
+    width: 90%;
     margin: 0;
   }
   .header .heading-box:last-of-type {
@@ -585,6 +585,98 @@ body {
   .main .explore .explore__box .explore__wrapper .explore__content .explore__heading {
     font-size: 1.8em;
     margin: 40px 0 20px 0;
+  }
+  .main .sign-up__section {
+    background-size: 100% 100%;
+  }
+  .main .sign-up__section .sign-up__heading {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding-top: 30px;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .header .heading-box {
+    width: 90%;
+    margin: 0;
+  }
+  .header .heading-box:last-of-type {
+    margin: auto;
+  }
+  .header .heading-box .nav .nav__list {
+    display: flex;
+  }
+  .header .heading-box .nav .nav__mobile-hamburger {
+    display: none;
+  }
+  .header .heading-box .logo .logo__image {
+    padding: 0 10px 0 0;
+  }
+  .header .heading-box .heading-box__content {
+    align-items: center;
+  }
+  .header .heading-box .heading-box__content .heading-box__heading {
+    font-size: 7em;
+  }
+  .header .heading-box .heading-box__content .heading-box__paragraph {
+    font-size: 14px;
+  }
+  .main .section {
+    margin: 0;
+  }
+  .main .discover__section {
+    display: none;
+  }
+  .main .search-place__section {
+    width: 100%;
+    margin: 0;
+  }
+  .main .search-place__section .find-box__wrapper {
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .main .search-place__section .find-box__wrapper .find-box__finded-item-box {
+    min-width: 10%;
+    margin: 30px;
+  }
+  .main .search-place__section .find-box__wrapper .find-box__finded-item-box .find-box__finded-item-image {
+    min-width: initial;
+    width: 100%;
+  }
+  .main .search-place__section .search-place__wrapper .search-place__filter {
+    justify-content: center;
+  }
+  .main .search-place__section .search-place__heading {
+    margin: 100px 0 100px 0;
+  }
+  .main .explore {
+    margin: 30px auto 0 auto;
+    width: 95%;
+  }
+  .main .explore:before {
+    top: 58%;
+  }
+  .main .explore .section__heading {
+    margin-bottom: 0;
+  }
+  .main .explore .explore__box {
+    width: 100%;
+  }
+  .main .explore .explore__box .explore__wrapper {
+    width: 80%;
+    padding: 30px 20px 40px 0;
+  }
+  .main .explore .explore__box .explore__wrapper .explore__content .explore__heading {
+    font-size: 1.8em;
+    margin: 40px 0 20px 0;
+  }
+  .main .explore .explore__box .explore__wrapper .explore__image-content {
+    margin: 0 auto;
   }
   .main .sign-up__section {
     background-size: 100% 100%;
