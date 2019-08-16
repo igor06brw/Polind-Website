@@ -2,51 +2,88 @@
         display:flex;
         justify-content: flex-start;
         position: absolute; 
-        z-index: 3;
-        top: 55em; 
+        z-index: 2;
+        min-width: 400px;
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
         left: 0;
         right: 0;
-         h5 {
+        top: 100%;
+
+
+        &:before {
+            position: relative;
+        }
+         
+        h5 {
              text-align: center;
              color: $white;
-             font-weight: 700;
-             padding: 40px;
+             font-size: 18px;
+             font-weight: 500;
+             margin:30px;
          }
 
         .discover-gallery--content {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
 
-            .discover-gallery--element {
+
+
+            
+
+            .discover-gallery--element {    
+                text-align: center;
+                max-width: 100%;
+                height: 100%;
+                z-index: 1;
                 position: relative;
-                padding: 10px;
+                
 
-                .discover-gallery--heading {
+                .sample-class {
                     position: absolute;
-                    left: 50%;
-                    margin: 180px 0;
-                    transform: translate(-50%); 
-                    color: $white;
-                    font-size: 40px;
+                    top: 50%;
+                    right: 0;
+                    left: 0;
+                    z-index: 2;
+
+                    .discover-gallery--heading {
+                        color: $white;
+                        font-size: 1.7rem;
+                        margin-bottom: 10px;
+                    }
+                    .discover-gallery--paragraph { 
+                        color: $white;
+                        font-weight: 500;
+                    }
+                    .discover-gallery--button { 
+                        margin-top: 80px;
+                        max-width: 250px;
+                        width: 60%;
+                    }
                 }
-                .discover-gallery--paragraph {
-                    position: absolute;
-                    left: 50%;  
-                    margin: 250px 0;
-                    transform: translate(-50%); 
-                    color: $white;
-                    font-weight: 500;
+                .discover-gallery--image {
+                    position: relative;
+                    max-width: 100%;
                 }
-                .discover-gallery--button {
-                    position: absolute;
-                    left: 50%;
-                    transform: translate(-50%); 
-                    margin: 340px 0;
-                }
+                // .discover-gallery--heading {
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+
+
+                //     color: $white;
+                //     font-size: 40px;
+                // }
+                // .discover-gallery--paragraph { 
+                //     color: $white;
+                //     font-weight: 500;
+                // }
+                // .discover-gallery--button { 
+                // }
+                // .discover-gallery--image {
+                //     position: relative;
+                // }
             }
             .discover-gallery--element:nth-of-type(4n+1) {
                 .discover-gallery--heading {
@@ -57,15 +94,17 @@
                 }
             }
             .discover-gallery--element:nth-of-type(2n+0) {
-                .discover-gallery--heading {
-                    font-size: 30px;
-                    margin: 300px 0;
-                }
-                .discover-gallery--paragraph {
-                    font-weight: 500;
-                    margin: 350px 0;
-                    color:hsl(46, 86%, 67%);
-
+                .sample-class {
+                    z-index: 2;
+                    top: 70%;
+                    .discover-gallery--heading {
+                        font-size: 30px;
+                    }
+                    .discover-gallery--paragraph {
+                        font-weight: 500;
+                        color:hsl(46, 86%, 67%);
+    
+                    }
                 }
             }
         }

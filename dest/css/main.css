@@ -15,9 +15,9 @@ body {
   justify-content: space-between;
   background-image: url(../../dest/assets/img/bg_header.png);
   background-repeat: no-repeat;
-  background-size: 300% 100%;
+  background-size: 100% 100%;
   z-index: 1;
-  height: 100vh;
+  height: 130vh;
   width: 100vw;
   position: relative;
   flex-direction: column;
@@ -46,7 +46,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-self: center;
   width: 90%;
+}
+
+.header .heading-box:last-of-type {
+  margin-bottom: 22%;
 }
 
 .header .heading-box .heading-box__heading {
@@ -88,6 +93,14 @@ body {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+}
+
+.nav .nav__list .nav__element .nav__link .nav__search-icon {
+  margin-left: 13px;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  background: url(../assets/img/search-icon.svg) no-repeat;
 }
 
 .nav .nav__mobile-hamburger {
@@ -132,6 +145,11 @@ body {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+  transition: all .3s ease-out;
+}
+
+.button:hover {
+  background-color: #f3d162;
 }
 
 .button--yellow {
@@ -149,56 +167,69 @@ body {
   display: flex;
   justify-content: flex-start;
   position: absolute;
-  z-index: 3;
-  top: 55em;
+  z-index: 2;
+  min-width: 400px;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  top: 100%;
+}
+
+.discover__section:before {
+  position: relative;
 }
 
 .discover__section h5 {
   text-align: center;
   color: #fff;
-  font-weight: 700;
-  padding: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px;
 }
 
 .discover__section .discover-gallery--content {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .discover__section .discover-gallery--content .discover-gallery--element {
+  text-align: center;
+  max-width: 100%;
+  height: 100%;
+  z-index: 1;
   position: relative;
-  padding: 10px;
 }
 
-.discover__section .discover-gallery--content .discover-gallery--element .discover-gallery--heading {
+.discover__section .discover-gallery--content .discover-gallery--element .sample-class {
   position: absolute;
-  left: 50%;
-  margin: 180px 0;
-  transform: translate(-50%);
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.discover__section .discover-gallery--content .discover-gallery--element .sample-class .discover-gallery--heading {
   color: #fff;
-  font-size: 40px;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
 }
 
-.discover__section .discover-gallery--content .discover-gallery--element .discover-gallery--paragraph {
-  position: absolute;
-  left: 50%;
-  margin: 250px 0;
-  transform: translate(-50%);
+.discover__section .discover-gallery--content .discover-gallery--element .sample-class .discover-gallery--paragraph {
   color: #fff;
   font-weight: 500;
 }
 
-.discover__section .discover-gallery--content .discover-gallery--element .discover-gallery--button {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  margin: 340px 0;
+.discover__section .discover-gallery--content .discover-gallery--element .sample-class .discover-gallery--button {
+  margin-top: 80px;
+  max-width: 250px;
+  width: 60%;
+}
+
+.discover__section .discover-gallery--content .discover-gallery--element .discover-gallery--image {
+  position: relative;
+  max-width: 100%;
 }
 
 .discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(4n+1) .discover-gallery--heading {
@@ -209,14 +240,17 @@ body {
   display: none;
 }
 
-.discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(2n+0) .discover-gallery--heading {
-  font-size: 30px;
-  margin: 300px 0;
+.discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(2n+0) .sample-class {
+  z-index: 2;
+  top: 70%;
 }
 
-.discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(2n+0) .discover-gallery--paragraph {
+.discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(2n+0) .sample-class .discover-gallery--heading {
+  font-size: 30px;
+}
+
+.discover__section .discover-gallery--content .discover-gallery--element:nth-of-type(2n+0) .sample-class .discover-gallery--paragraph {
   font-weight: 500;
-  margin: 350px 0;
   color: #f3d162;
 }
 
@@ -229,7 +263,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 15% auto 0 auto;
+  margin: 18% auto 0 auto;
   width: 80%;
   position: relative;
 }
@@ -237,7 +271,7 @@ body {
 .search-place__section .search-place__heading {
   text-align: center;
   margin-bottom: 100px;
-  font-size: 42px;
+  font-size: 30px;
   color: grey;
 }
 
@@ -254,11 +288,11 @@ body {
 
 .search-place__section .search-place__wrapper .search-place__input input {
   border: none;
-  /* <-- This thing here */
   border-radius: 25px;
   box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
   width: 100%;
   min-height: 50px;
+  font-size: 16px;
 }
 
 .search-place__section .search-place__wrapper .search-place__input input::placeholder {
@@ -297,6 +331,12 @@ body {
 .search-place__section .search-place__wrapper .search-place__filter .search-place__list .search-place__filter-element .filter-link--grey {
   background-color: grey;
   color: white;
+  transition: all .3s ease-out;
+}
+
+.search-place__section .search-place__wrapper .search-place__filter .search-place__list .search-place__filter-element .filter-link--grey:hover {
+  background-color: #f3d162;
+  border: 1px solid transparent;
 }
 
 .search-place__section .find-box__wrapper {

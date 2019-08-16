@@ -4,13 +4,11 @@
 // Load plugins
 const autoprefixer = require("autoprefixer");
 const browsersync = require("browser-sync").create();
-const cp = require("child_process");
 const cssnano = require("cssnano");
 const del = require("del");
 const eslint = require("gulp-eslint");
 const gulp = require("gulp");
 const imagemin = require("gulp-imagemin");
-const newer = require("gulp-newer");
 const plumber = require("gulp-plumber");
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
@@ -25,12 +23,9 @@ function browserSync(done) {
     server: {
       baseDir: "./"
     },
-    open: true,
-    https: true,
     watch: true,
-    online: true,
     logLevel: "debug",
-    port: 3000,
+    port: 5000,
   });
   done();
 }
@@ -109,7 +104,6 @@ function watchFiles() {
   gulp.watch("./src/scss/**/*", css);
   gulp.watch("./src/js/**/*", gulp.series(scriptsLint, scripts));
   gulp.series(browserSyncReload);
-  gulp.watch("./assets/img/**/*", images);
 }
 
 // define complex tasks

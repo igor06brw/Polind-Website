@@ -4,9 +4,9 @@
     justify-content: space-between;
     background-image: url(../../dest/assets/img/bg_header.png);
     background-repeat: no-repeat;
-    background-size: 300% 100%;
+    background-size: 100% 100%;
     z-index: 1;
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
     position: relative;
     flex-direction: column;
@@ -34,7 +34,12 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-self: center;
             width: 90%;
+        }
+
+        &:last-of-type {
+            margin-bottom: 22%;
         }
         
         .heading-box__heading {

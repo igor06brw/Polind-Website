@@ -7,6 +7,11 @@
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
+    transition: all .3s ease-out;
+
+    &:hover {
+        background-color: hsl(46, 86%, 67%);
+    }
 
 }
 .button--yellow {
